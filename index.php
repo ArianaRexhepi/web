@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="login.html">
     <link rel="stylesheet" href="signup.html">
-    <link rel="stylesheet" href="contact.html"
+    <link rel="stylesheet" href="contact.html">
     <link rel="stylesheet" href="https://fontawesome.com/v4/icons/">
 </head>
 <body>
@@ -41,19 +41,12 @@
             Our collaborative team works hard to create links between humans, nature and culture, and strives to highlight those elusive elements that few people see in their daily lives.<br><br>
             The expedition we undertake has no destination or end, rather, it centers on constant movement, observation and respect for the temporality and the seasonality dictated by Earth.</p> 
        </div>
-       <div class="slides slowFade">
-        <div class="slide">
-            <img src="img1.jpg.jpg" alt="img"/>
+       <div class="col50">
+        <div class="imgX">
+            <img src="s.jpg" alt="img"/>
         </div>
-        <div class="slide">
-            <img src="risotto.jpg" alt="img"/>
-        </div>
-        <div class="slide">
-            <img src="g.jpg" alt="img"/>
-        </div>
-        <div class="slide">
-            <img src="y.jpg" alt="img"/>
-        </div>
+        
+    </div>
     </div>
     </section>
 
