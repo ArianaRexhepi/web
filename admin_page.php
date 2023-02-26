@@ -18,8 +18,8 @@ if(!isset($_SESSION['Ariana'])){
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>admin page</title>
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+  
+   <link rel="stylesheet" href="css/logsig.css">
 
 </head>
 <body>
