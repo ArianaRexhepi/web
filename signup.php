@@ -180,6 +180,61 @@ body{
     </style>
 </head>
 <body>
+<?php
+$showAlert = false;
+$showError = false;
+$exists = false;
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Include file which makes the
+    // Database Connection.
+    include 'config.php';
+    $name = $_POST["name"];
+    $password = $_POST["password"];
+    $email = $_POST["email"];
+
+    $active = true;
+
+    $sql = "Select * from users where name='$name'";
+
+    //result of the query
+    $result = mysqli_query($conn, $sql);
+
+    $num = mysqli_num_rows($result);
+
+    // This sql query is use to check if
+    // the username is already present 
+    // or not in our Database
+    if ($num == 0) {
+        if ($exists == false) {
+            $hash = password_hash(
+                $password,
+                PASSWORD_DEFAULT
+            );
+
+            // Password Hashing is used here. 
+            $sql = "INSERT INTO `users` ( `name`, 
+                `email`, `password`) VALUES ('$name', 
+                '$email', '$hash')";
+
+            $result = mysqli_query($conn, $sql);
+
+            if ($result) {
+                $showAlert = true;
+            }
+        } else {
+            $showError = "Passwords do not match";
+        }
+    } // end if 
+
+    if ($num > 0) {
+        $exists = "Email not available";
+    }
+
+} //end if
+
+?>
+
 <!--Regjister form-->
 <div class="form signup" onsubmit="signUpValidation()">
     <span class="title">Registration</span>
