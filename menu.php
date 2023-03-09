@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="index.php">
 </head>
 <body>
         <header>
             <a href="#" class="logo">De<span>Luxe</span></a>
             <div class="menuToggle" onclick="toggleMenu();"></div>
             <ul class="nav">
-                <li><a href="#banner">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="#about">About </a></li>
                 <li><a href="menu.php">Menu</a></li>
                 <li><a href="#expert">Expert</a></li>
