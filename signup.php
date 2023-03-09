@@ -279,7 +279,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
 </div>
 
-<script src="loginn.js"></script>
+<script src="loginsignin.js"></script>
 
 </body>
 </html>

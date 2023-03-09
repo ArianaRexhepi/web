@@ -253,7 +253,7 @@ if(isset($_POST['submit'])){
                     
                      <div class="login-signup">
                         <span class="text">Not a member</span>
-                        <a href="signup.html" class="text-signup-link">Sign up</a>
+                        <a href="signup.php" class="text-signup-link">Sign up</a>
                      </div>
                     </div>
                  
