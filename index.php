@@ -29,7 +29,7 @@
         <div class="content">
             <h2>Always Choose Good</h2>
             <p>Food comes first, a slim waist comes second</p>
-            <a href="menu.html" class="om">Our Menu</a>
+            <a href="menu.php" class="om">Our Menu</a>
         </div>
     </section >
     <section class="about" id="about">
