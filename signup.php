@@ -271,7 +271,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </form>
     <div class="login-signup">
         <span class="text">Alredy a member?
-            <a href="login.html" class="text login-link">Login Now</a>
+            <a href="login.php" class="text login-link">Login Now</a>
         </span>
     </div>
  
