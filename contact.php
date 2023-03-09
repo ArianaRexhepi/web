@@ -312,10 +312,10 @@ margin-bottom: 30px;
         <a href="#" class="logo">De<span>Luxe</span></a>
         <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="nav">
-            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
-            <li><a href="#about" onclick="toggleMenu();">About </a></li>
-            <li><a href="#expert" onclick="toggleMenu();">Expert</a></li>
-            <li><a href="#review"onclick="toggleMenu();">Review</a></li>
+            <li><a href="index.php" onclick="toggleMenu();">Home</a></li>
+            <li><a href="index.php" onclick="toggleMenu();">About </a></li>
+            <li><a href="index.php" onclick="toggleMenu();">Expert</a></li>
+            <li><a href="index.php"onclick="toggleMenu();">Review</a></li>
             <li><a href="menu.php" onclick="toggleMenu();">Menu</a></li>
             <li><a href="contact.php" onclick="toggleMenu();">Contact</a></li> 
             <li><a href="login.php" onclick="toggleMenu();">Log in</a></li> 
