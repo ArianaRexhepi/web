@@ -20,9 +20,9 @@
             <li><a href="#about" onclick="toggleMenu();">About </a></li>
             <li><a href="#expert" onclick="toggleMenu();">Expert</a></li>
             <li><a href="#review"onclick="toggleMenu();">Review</a></li>
-            <li><a href="menu.html" onclick="toggleMenu();">Menu</a></li>
-            <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li> 
-            <li><a href="login.html" onclick="toggleMenu();">Log in</a></li> 
+            <li><a href="menu.php" onclick="toggleMenu();">Menu</a></li>
+            <li><a href="contact.php" onclick="toggleMenu();">Contact</a></li> 
+            <li><a href="login.php" onclick="toggleMenu();">Log in</a></li> 
         </ul>
     </header>
     <section class="banner" id="banner">
