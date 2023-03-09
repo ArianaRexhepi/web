@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="login.html">
-    <link rel="stylesheet" href="signup.html">
-    <link rel="stylesheet" href="contact.html">
+    <link rel="stylesheet" href="login.php">
+    <link rel="stylesheet" href="signup.php">
+    <link rel="stylesheet" href="contact.php">
     <link rel="stylesheet" href="https://fontawesome.com/v4/icons/">
 </head>
 <body>
