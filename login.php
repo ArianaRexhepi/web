@@ -186,10 +186,10 @@ session_start();
         if (isset($_SESSION['roli'])&&$_SESSION['roli']==1) {
             echo '<li><a href="dashboard.php">Dashboard</a></li>';
         }
-        echo 'Emri eshte:' .$_SESSION['emri'];
-        echo '<br>';
-        echo 'Koha kur jemi bere login eshte: ' .$_SESSION['kohaLogin'];
-        echo '<br>';
+       // echo 'Emri eshte:' .$_SESSION['emri'];
+        //echo '<br>';
+        //echo 'Koha kur jemi bere login eshte: ' .$_SESSION['kohaLogin'];
+        //echo '<br>';
     ?>
     <a href="logout.php">Log out</a>
 
