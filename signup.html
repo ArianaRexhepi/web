@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    
+    <link rel="stylesheet" href="main.css">
     <!--CSS-->
     <title>Login and Registration Form</title>
     <style>
@@ -23,7 +23,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(125, 5, 5);;
 }
 .container{
     position: relative;
@@ -84,7 +84,7 @@ body{
 .input-field input{
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 135%;
     padding: 0 35px;
     border: none;
     outline: none;
@@ -180,61 +180,19 @@ body{
     </style>
 </head>
 <body>
-<?php
-$showAlert = false;
-$showError = false;
-$exists = false;
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Include file which makes the
-    // Database Connection.
-    include 'config.php';
-    $name = $_POST["name"];
-    $password = $_POST["password"];
-    $email = $_POST["email"];
-
-    $active = true;
-
-    $sql = "Select * from users where name='$name'";
-
-    //result of the query
-    $result = mysqli_query($conn, $sql);
-
-    $num = mysqli_num_rows($result);
-
-    // This sql query is use to check if
-    // the username is already present 
-    // or not in our Database
-    if ($num == 0) {
-        if ($exists == false) {
-            $hash = password_hash(
-                $password,
-                PASSWORD_DEFAULT
-            );
-
-            // Password Hashing is used here. 
-            $sql = "INSERT INTO `users` ( `name`, 
-                `email`, `password`) VALUES ('$name', 
-                '$email', '$hash')";
-
-            $result = mysqli_query($conn, $sql);
-
-            if ($result) {
-                $showAlert = true;
-            }
-        } else {
-            $showError = "Passwords do not match";
-        }
-    } // end if 
-
-    if ($num > 0) {
-        $exists = "Email not available";
-    }
-
-} //end if
-
-?>
-
+    <header>
+        <a href="index.html" class="logo">De<span>Luxe</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+                <li><a href="#index.html">About </a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="index.html">Expert</a></li>
+                <li><a href="index.html">Review</a></li>
+                <li><a href="contact.html">Contact</a></li> 
+                <li><a href="login.html">Log in</a></li>  
+        </ul>
+    </header>
 <!--Regjister form-->
 <div class="form signup" onsubmit="signUpValidation()">
     <span class="title">Registration</span>
@@ -248,7 +206,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <i class="fa-solid fa-envelope" icon></i>                                
         </div>
         <div class="input-field">
-            <input type="password" name="password" placeholder="create your password" class="password"> 
+            <input type="password" name="password" placeholder="create password" class="password"> 
             <i class="fa-solid fa-lock icon"></i>
             <i class="fa-solid fa-eye-slash showhidepw"></i>
         </div>
@@ -271,7 +229,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </form>
     <div class="login-signup">
         <span class="text">Alredy a member?
-            <a href="login.php" class="text login-link">Login Now</a>
+            <a href="login.html" class="text login-link">Login Now</a>
         </span>
     </div>
  

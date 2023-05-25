@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
+    <link rel="stylesheet" href="main.css">
     <!--CSS-->
     <title>Login and Registration Form</title>
     <style>
@@ -180,19 +180,19 @@ body{
     </style>
 </head>
 <body>
-<?php
-
-session_start();
-        if (isset($_SESSION['roli'])&&$_SESSION['roli']==1) {
-            echo '<li><a href="dashboard.php">Dashboard</a></li>';
-        }
-       // echo 'Emri eshte:' .$_SESSION['emri'];
-        //echo '<br>';
-        //echo 'Koha kur jemi bere login eshte: ' .$_SESSION['kohaLogin'];
-        //echo '<br>';
-    ?>
-    <a href="logout.php">Log out</a>
-
+    <header>
+        <a href="index.html" class="logo">De<span>Luxe</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+                <li><a href="#index.html">About </a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="index.html">Expert</a></li>
+                <li><a href="index.html">Review</a></li>
+                <li><a href="contact.html">Contact</a></li> 
+                <li><a href="login.html">Log in</a></li>  
+        </ul>
+    </header>
     <div class ="container">
         <div class ="forms">
             <div class ="form login">
@@ -224,7 +224,7 @@ session_start();
                     
                      <div class="login-signup">
                         <span class="text">Not a member</span>
-                        <a href="signup.php" class="text-signup-link">Sign up</a>
+                        <a href="signup.html" class="text-signup-link">Sign up</a>
                      </div>
                     </div>
                  
